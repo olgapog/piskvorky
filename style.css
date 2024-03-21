@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+height: 100vh;
+background-image: linear-gradient(#615dad, #ffc8da);
+background-repeat: no-repeat;
+font-family: sans-serif;
+color: #ffffff;
+}
+
+.conteiner {
+  max-width: 350px;
+  margin: 10rem auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.conteiner-main {
+  background-color:#283e50 ;
+}
+
+.conteiner-description {
+padding: 3.2rem 1.6rem;
+}
+
+h1 {
+  margin-bottom: 2.8rem;
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 5rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.conteiner-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn--green:link,
+.btn--green:visited {
+  background-color: #1fcca4;
+}
+
+.btn--green:hover,
+.btn--green:active {
+  background-color: #1cbb96;
+}
+
+.btn--blue:link,
+.btn--blue:visited {
+  background-color: #0197f6;
+}
+
+.btn--blue:hover,
+.btn--blue:active {
+background-color: #0090e9;
+}
