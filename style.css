@@ -16,7 +16,7 @@ font-family: sans-serif;
 color: #ffffff;
 }
 
-.conteiner {
+.container {
   max-width: 350px;
   margin: 10rem auto;
 }
@@ -27,16 +27,16 @@ img {
   display: block;
 }
 
-.conteiner-main {
+.container-main {
   background-color:#283e50 ;
 }
 
-.conteiner-description {
+.container-description {
 padding: 3.2rem 1.6rem;
 }
 
 h1 {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.2rem;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 5rem;
@@ -49,7 +49,7 @@ p {
   line-height: 1.4;
 }
 
-.conteiner-btns {
+.container-btns {
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -84,4 +84,43 @@ p {
 .btn--blue:hover,
 .btn--blue:active {
 background-color: #0090e9;
+}
+.container-hra {
+  max-width: 80vmin;
+  margin: 5rem auto;
+}
+
+.h1-hra {
+font-size: 8rem;
+}
+
+.player {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hraje {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+.home {
+  background-color: #1fcca4 ;
+  padding: 1rem ;
+  border-radius: 0.5rem;
+}
+.restart {
+  background-color:#0197f6 ;
+  padding: 1rem ;
+  border-radius: 0.5rem;
+}
+.container-info {
+  display: flex;
+  justify-content:space-between ;
 }
