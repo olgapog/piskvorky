@@ -165,7 +165,11 @@ p {
 
 }
 
-.button-row {
+.button-row1, .button-row2, .button-row3, 
+.button-row4, .button-row5, .button-row6,
+.button-row7, .button-row8, .button-row9, 
+.button-row10
+ {
   display: flex;
   width: 100%;
 }
@@ -191,13 +195,13 @@ p {
   background-image: url(image/circle-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 56px;
+  background-size: contain;
 }
 
 .board__field--cross {
   background-image: url(image/cross-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 42px;
+  background-size: contain;
 }
 
