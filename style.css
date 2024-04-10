@@ -187,4 +187,17 @@ p {
   background-color: #dfcfe0;
 }
 
+.board__field--circle {
+  background-image: url(image/circle-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
+}
+
+.board__field--cross {
+  background-image: url(image/cross-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
+}
 
