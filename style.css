@@ -191,13 +191,13 @@ p {
   background-image: url(image/circle-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 48px;
+  background-size: 56px;
 }
 
 .board__field--cross {
   background-image: url(image/cross-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 48px;
+  background-size: 42px;
 }
 
