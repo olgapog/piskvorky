@@ -29,3 +29,13 @@ document.querySelector('button:nth-child(9)').addEventListener('click', Circleor
 document.querySelector('button:nth-child(10)').addEventListener('click', CircleorCross);
 
 
+const navRestart = (event) => {
+if (confirm('Do you want to start playing again?') === true) { event.setAttribute('href', 'hra.html')
+}
+else {
+  event.preventDefault();
+}
+};
+
+document.querySelector('.game-restart').addEventListener('click', navRestart);
+
