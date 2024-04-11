@@ -161,18 +161,8 @@ p {
 .btns {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
-
 }
 
-/*.button-row1, .button-row2, .button-row3, 
-.button-row4, .button-row5, .button-row6,
-.button-row7, .button-row8, .button-row9, 
-.button-row10
- {
-  display: flex;
-  width: 100%;
-}*/
 
 .button {
   width: 10%;
@@ -181,6 +171,7 @@ p {
   cursor: pointer;
   transition: 0.3s;
   aspect-ratio: 1/1;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -203,5 +194,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+ 
 }
 
