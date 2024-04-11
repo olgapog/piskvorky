@@ -158,24 +158,24 @@ p {
   flex-direction: column;
 }
 
-.buttons {
+.btns {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid black;
 
 }
 
-.button-row1, .button-row2, .button-row3, 
+/*.button-row1, .button-row2, .button-row3, 
 .button-row4, .button-row5, .button-row6,
 .button-row7, .button-row8, .button-row9, 
 .button-row10
  {
   display: flex;
   width: 100%;
-}
+}*/
 
 .button {
-  width: 100%;
+  width: 10%;
   border: 1px solid black;
   background-color: #cbb9ce;
   cursor: pointer;
