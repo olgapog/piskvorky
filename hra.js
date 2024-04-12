@@ -30,12 +30,11 @@ document.querySelector('button:nth-child(10)').addEventListener('click', Circleo
 
 
 const navRestart = (event) => {
-if (confirm('Do you want to start playing again?') === true) { event.setAttribute('href', 'hra.html')
+if (confirm('Do you want to start playing again?') === true) { event.setAttribute('href', 'hra.html');
 }
 else {
   event.preventDefault();
 }
 };
-
 document.querySelector('.game-restart').addEventListener('click', navRestart);
 
