@@ -17,16 +17,10 @@ else {
 }
 };
 
-document.querySelector('button:nth-child(1)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(2)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(3)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(4)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(5)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(6)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(7)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(8)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(9)').addEventListener('click', CircleorCross);
-document.querySelector('button:nth-child(10)').addEventListener('click', CircleorCross);
+const buttonAll = document.querySelectorAll('button');
+buttonAll.forEach((btn) => {
+  btn.addEventListener('click', CircleorCross);
+})
 
 
 const navRestart = (event) => {
