@@ -1,3 +1,9 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
+
+
+
+const buttonAll = document.querySelectorAll('button');
 
 
 let currentPlayer = 'circle';
@@ -15,14 +21,34 @@ else {
   imgCircle.src = 'image/circle.svg';
   currentPlayer = 'circle';
 }
+
+// Spojeni pole s button
+
+const gameArray = [...buttonAll];
+gameArray.map((button) => {
+  if (button.classList.contains('board__field--circle')) {
+    return '0';
+  }
+   else if (button.classList.contains('board__field--cross')) {
+    return 'x';
+   }
+   else {
+    return '_';
+   }
+});
+
+
+
 };
 
-const buttonAll = document.querySelectorAll('button');
+
+
+
 buttonAll.forEach((btn) => {
   btn.addEventListener('click', CircleorCross);
 })
 
-
+// Restart hry
 const navRestart = (event) => {
 if (confirm('Do you want to start playing again?') === true) { event.setAttribute('href', 'hra.html');
 }
