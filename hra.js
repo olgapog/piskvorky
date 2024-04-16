@@ -1,14 +1,10 @@
 import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
 
-
-
-
 const buttonAll = document.querySelectorAll('button');
-
-
 let currentPlayer = 'circle';
+
 const CircleorCross = (event) => {
-  event.target.disabled = true;
+
 if (currentPlayer === 'circle') {
   event.target.classList.add('board__field--circle');
   const imgCross = document.querySelector('.image-player');
@@ -21,34 +17,39 @@ else {
   imgCircle.src = 'image/circle.svg';
   currentPlayer = 'circle';
 }
+event.target.disabled = true;
 
-// Spojeni pole s button
-
-const gameArray = [...buttonAll];
-gameArray.map((button) => {
-  if (button.classList.contains('board__field--circle')) {
-    return '0';
-  }
-   else if (button.classList.contains('board__field--cross')) {
-    return 'x';
-   }
-   else {
-    return '_';
-   }
+// Kontrola hry o výhru
+const symbol = [...buttonAll].map((btn) => {
+if (btn.classList.contains('board__field--circle')) {
+  return 'o';
+}
+else if (btn.classList.contains('board__field--cross')) {
+  return 'x';
+}
+else {
+  return '_';
+}
 });
 
-
-
+const winner = findWinner(symbol);
+if (winner === 'o' || winner === 'x') {
+  setTimeout(() => {
+  alert(`Win player with symbol ${winner}!`);
+  location.reload();},200 );
+}
+else if (winner === 'tie') {
+  setTimeout(() => {
+  alert('The play is tie!');
+   location.reload();}, 200 );
+}
 };
 
-
-
-
 buttonAll.forEach((btn) => {
-  btn.addEventListener('click', CircleorCross);
-})
+ btn.addEventListener('click', CircleorCross);
+});
 
-// Restart hry
+//Restart hry
 const navRestart = (event) => {
 if (confirm('Do you want to start playing again?') === true) { event.setAttribute('href', 'hra.html');
 }
