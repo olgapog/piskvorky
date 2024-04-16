@@ -98,7 +98,7 @@ p {
 /*Beginning of styling hra.html*/
 
 .container-hra {
-  max-width: 80vmin;
+  max-width: 75vmin;
   margin: 3rem auto;
 }
 
@@ -166,7 +166,7 @@ p {
 
 .button {
   width: 10%;
-  border: 1px solid black;
+  border: 1px solid #000;
   background-color: #cbb9ce;
   cursor: pointer;
   transition: 0.3s;
@@ -186,14 +186,14 @@ p {
   background-image: url(image/circle-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 75%;
 }
 
 .board__field--cross {
   background-image: url(image/cross-black.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 75%;
  
 }
 
